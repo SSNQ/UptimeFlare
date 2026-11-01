@@ -101,6 +101,6 @@ resource "cloudflare_pages_project" "uptimeflare" {
 resource "cloudflare_pages_domain" "status_domain" {
   account_id   = var.CLOUDFLARE_ACCOUNT_ID
   project_name = cloudflare_pages_project.uptimeflare.name
-  domain       = "status.130128.xyz"
+  name         = "status.130128.xyz"
 }
 
