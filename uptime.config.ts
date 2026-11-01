@@ -58,7 +58,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '113.45.223.62:22',
       tooltip: '华为云广州节点 22 端口可用性探测 (113.45.223.62)',
-      timeout: 5000,
+      timeout: 10000,
     },
 
     // 2. 阿里云首尔服务器
@@ -68,7 +68,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '8.220.208.64:22',
       tooltip: '阿里云韩国首尔轻量服务器 SSH 通信 (8.220.208.64:22)',
-      timeout: 5000,
+      timeout: 10000,
     },
     {
       id: 'aliyun_seoul_ai',
@@ -76,7 +76,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '8.220.208.64:13533',
       tooltip: '阿里云首尔 sing-box 核心协议转发端口 (8.220.208.64:13533)',
-      timeout: 5000,
+      timeout: 10000,
     },
 
     // 3. AWS 日本东京服务器
@@ -86,7 +86,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '35.76.115.176:22',
       tooltip: 'AWS 日本东京 EC2 计算实例 (35.76.115.176:22)',
-      timeout: 5000,
+      timeout: 10000,
     },
 
     // 4. CloudCone 洛杉矶服务器
@@ -96,7 +96,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '66.154.110.7:22',
       tooltip: 'CloudCone 美国洛杉矶测试节点 (66.154.110.7:22)',
-      timeout: 5000,
+      timeout: 10000,
     },
 
     // 5. Google Cloud (GCP) 美国三节点
@@ -106,7 +106,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '35.212.240.197:22',
       tooltip: 'Google Cloud us-west1-b #1 (gcp.130128.xyz / 35.212.240.197:22)',
-      timeout: 5000,
+      timeout: 10000,
     },
     {
       id: 'gcp_oregon_2',
@@ -115,7 +115,7 @@ const workerConfig: WorkerConfig = {
       target: '35.212.239.43:22',
       tooltip: 'Google Cloud us-west1-b #2 (Komari 探针主控宿主 / 35.212.239.43:22)',
       statusPageLink: 'https://komari.130128.xyz',
-      timeout: 5000,
+      timeout: 10000,
     },
     {
       id: 'gcp_oregon_3',
@@ -123,7 +123,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '35.212.158.160:22',
       tooltip: 'Google Cloud us-west1-b #3 (35.212.158.160:22)',
-      timeout: 5000,
+      timeout: 10000,
     },
 
     // 6. 魅族 Pro 6 Plus 本地辅助节点 (IPv6 DDNS 探测)
@@ -133,7 +133,7 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: 'meizu.130128.xyz:8022',
       tooltip: '家庭本地 Linux aarch64 边缘终端 (meizu.130128.xyz:8022)',
-      timeout: 8000,
+      timeout: 10000,
     },
   ],
   notification: {
