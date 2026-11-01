@@ -124,5 +124,7 @@ const workerConfig: WorkerConfig = {
   },
 }
 
+const maintenances: MaintenanceConfig[] = []
+
 // Don't edit this line
-export { pageConfig, workerConfig }
+export { maintenances, pageConfig, workerConfig }
