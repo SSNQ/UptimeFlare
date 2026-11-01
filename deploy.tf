@@ -98,20 +98,5 @@ resource "cloudflare_pages_project" "uptimeflare" {
   }
 }
 
-resource "cloudflare_pages_domain" "status_domain" {
-  account_id   = var.CLOUDFLARE_ACCOUNT_ID
-  project_name = cloudflare_pages_project.uptimeflare.name
-  name         = "status.130128.xyz"
-}
-
-resource "cloudflare_dns_record" "status_dns" {
-  zone_id = "01b01cc54a7fbbbc953e71c87810c8de"
-  name    = "status"
-  type    = "CNAME"
-  content = "uptimeflare-1m8.pages.dev"
-  proxied = true
-  ttl     = 1
-  comment = "UptimeFlare Status Page"
-}
 
 
